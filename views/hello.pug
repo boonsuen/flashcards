@@ -1,7 +1,7 @@
-extends layout
+extends app
 
-block content
-  form(action='/hello', method='post')
-    label Please enter your name:
-      input(type='text', name='username')
-    button(type='submit') Submit
+block intro
+  form.namecard-form(action='/hello', method='post')
+    label.namecard-prompt Please enter your name:
+      input.namecard-name(type='text', name='username')
+    button.namecard-submit(type='submit') Submit
