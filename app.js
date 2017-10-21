@@ -10,7 +10,7 @@ app.use('/static', express.static('public'));
 
 app.set('view engine', 'pug');
 
-const mainRoutes = require('./routes');
+const mainRoutes  = require('./routes');
 const cardRoutes = require('./routes/cards');
 
 app.use(mainRoutes);
