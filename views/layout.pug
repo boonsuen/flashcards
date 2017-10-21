@@ -3,6 +3,15 @@ html(lang="en")
   head
     title Flash Cards
     link(rel='stylesheet', href='/static/stylesheets/style.css')
+    link(rel='stylesheet', href='https://s.pageclip.co/v1/pageclip.css')
   body
     include includes/header.pug
     block main
+    form(action='https://send.pageclip.co/3vpH6vrBB45AMHVkplzAtCHlizbUMxna/contact', class='pageclip-form', method='post')
+      input(type='text', name='name', value='Boonhai Oh')
+      input(type='email', name='email', value='ohboonhai123@gmail.com')
+      input(type='text', name='subject' value='Happy New Year')
+      input(type='text', name='message' value='This is an email about Happy New Year Greeting from me.')
+      button(type='submit', class='pageclip-form__submit')
+        span Send
+    script(src='https://s.pageclip.co/v1/pageclip.js', charset'utf-8')
